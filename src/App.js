@@ -11,10 +11,10 @@ import './App.css'
 
 const initialFormValues = {
   name: '',
-  size: '12',
-  sauce: 'Original Red',
+  size: '',
+  sauce: '',
   toppings: {
-    pepperoni: true,
+    pepperoni: false,
     sausage: false,
     onions: false,
     pineapple: false,
@@ -57,6 +57,13 @@ const App = () => {
       setFormValues(initialFormValues)
     })
  }
+
+//  useEffect(()=> {
+//   formSchema.isValid(formValues)
+//   .then(valid => {
+//     setDisabled(!valid)
+//   })
+// }, [formValues])
 
  console.log(pizzas)
   //////////////// EVENT HANDLERS ////////////////
@@ -101,6 +108,8 @@ const App = () => {
       }
     })
   }
+
+  
 
   const onSubmit = evt => {
     evt.preventDefault()

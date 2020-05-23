@@ -139,7 +139,7 @@ export default function Form(props) {
             </label>
         </div>
 
-            <button className='submit' >Submit order</button>
+            <button className='submit'  >Submit order</button>
             <div>
             {
             pizzas.map(pizza => {
