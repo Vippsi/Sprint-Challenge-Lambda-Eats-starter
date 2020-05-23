@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+div img {
+  width: 80%;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+ 
+  width: 50%;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 1%;
+  border: 2px double #2f3640;
+  width: 25%;
+  font-size: 1.3rem;
+}
